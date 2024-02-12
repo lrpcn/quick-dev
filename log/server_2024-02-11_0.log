@@ -1,0 +1,64 @@
+2024-02-11 21:01:59.991  INFO 9792 --- [main] com.lrpcn.quickdev.QuickDevApplication   : Starting QuickDevApplication using Java 1.8.0_392 on PC202306121830L with PID 9792 (C:\Users\Administrator\Desktop\JavaLearn\lrpcn\quick-dev\target\classes started by Administrator in C:\Users\Administrator\Desktop\JavaLearn\lrpcn\quick-dev)
+2024-02-11 21:01:59.999  INFO 9792 --- [main] com.lrpcn.quickdev.QuickDevApplication   : The following 1 profile is active: "dev"
+2024-02-11 21:02:00.895  INFO 9792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-11 21:02:00.897  INFO 9792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-11 21:02:00.915  INFO 9792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-02-11 21:02:01.007  WARN 9792 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.lrpcn.quickdev.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2024-02-11 21:02:01.007  WARN 9792 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lrpcn.quickdev.mapper]' package. Please check your configuration.
+2024-02-11 21:02:01.413  INFO 9792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-02-11 21:02:01.419  INFO 9792 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-11 21:02:01.420  INFO 9792 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-02-11 21:02:01.473  INFO 9792 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-11 21:02:01.473  INFO 9792 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1427 ms
+2024-02-11 21:02:01.542  INFO 9792 --- [main] org.redisson.Version                     : Redisson 3.21.3
+2024-02-11 21:02:01.722  INFO 9792 --- [redisson-netty-2-5] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for localhost/127.0.0.1:6379
+2024-02-11 21:02:01.761  INFO 9792 --- [redisson-netty-2-20] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for localhost/127.0.0.1:6379
+2024-02-11 21:02:02.863  INFO 9792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-11 21:02:03.023  INFO 9792 --- [main] com.lrpcn.quickdev.QuickDevApplication   : Started QuickDevApplication in 3.502 seconds (JVM running for 3.905)
+2024-02-11 21:03:25.877  INFO 9792 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-11 21:03:25.877  INFO 9792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-11 21:03:25.878  INFO 9792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-11 21:03:40.747  INFO 9792 --- [http-nio-8080-exec-4] com.lrpcn.quickdev.aop.LogInterceptor    : 请求开始，请求ID: 9b00c0a6754e49239c1fa3b4614b7093，请求路径: /api/user/login，ip: 0:0:0:0:0:0:0:1 请求参数: [UserLoginRequest(userAccount=admin, userPassword=123456789)]
+2024-02-11 21:03:40.779  INFO 9792 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-11 21:03:46.491  INFO 9792 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-11 21:03:46.561  INFO 9792 --- [http-nio-8080-exec-4] com.lrpcn.quickdev.aop.LogInterceptor    : 请求结束，请求ID: 9b00c0a6754e49239c1fa3b4614b7093，执行时间: 5828ms
+2024-02-11 21:03:54.242  INFO 9792 --- [http-nio-8080-exec-6] com.lrpcn.quickdev.aop.LogInterceptor    : 请求开始，请求ID: 83550d104f774c25aad556b212e25766，请求路径: /api/user/login，ip: 0:0:0:0:0:0:0:1 请求参数: [UserLoginRequest(userAccount=admin, userPassword=123456789)]
+2024-02-11 21:03:54.250  INFO 9792 --- [http-nio-8080-exec-6] com.lrpcn.quickdev.aop.LogInterceptor    : 请求结束，请求ID: 83550d104f774c25aad556b212e25766，执行时间: 8ms
+2024-02-11 21:03:55.835  INFO 9792 --- [http-nio-8080-exec-5] com.lrpcn.quickdev.aop.LogInterceptor    : 请求开始，请求ID: e827ca5933c34fe4bfbb343cf7b962af，请求路径: /api/user/login，ip: 0:0:0:0:0:0:0:1 请求参数: [UserLoginRequest(userAccount=admin, userPassword=123456789)]
+2024-02-11 21:03:55.843  INFO 9792 --- [http-nio-8080-exec-5] com.lrpcn.quickdev.aop.LogInterceptor    : 请求结束，请求ID: e827ca5933c34fe4bfbb343cf7b962af，执行时间: 8ms
+2024-02-11 21:03:56.269  INFO 9792 --- [http-nio-8080-exec-7] com.lrpcn.quickdev.aop.LogInterceptor    : 请求开始，请求ID: 7be3238fa1544e73a4793f9b100a62f1，请求路径: /api/user/login，ip: 0:0:0:0:0:0:0:1 请求参数: [UserLoginRequest(userAccount=admin, userPassword=123456789)]
+2024-02-11 21:03:56.275  INFO 9792 --- [http-nio-8080-exec-7] com.lrpcn.quickdev.aop.LogInterceptor    : 请求结束，请求ID: 7be3238fa1544e73a4793f9b100a62f1，执行时间: 5ms
+2024-02-11 21:03:56.646  INFO 9792 --- [http-nio-8080-exec-8] com.lrpcn.quickdev.aop.LogInterceptor    : 请求开始，请求ID: 02bdfd6191d946d0989dcf9421f4955d，请求路径: /api/user/login，ip: 0:0:0:0:0:0:0:1 请求参数: [UserLoginRequest(userAccount=admin, userPassword=123456789)]
+2024-02-11 21:03:56.651  INFO 9792 --- [http-nio-8080-exec-8] com.lrpcn.quickdev.aop.LogInterceptor    : 请求结束，请求ID: 02bdfd6191d946d0989dcf9421f4955d，执行时间: 5ms
+2024-02-11 21:03:57.010  INFO 9792 --- [http-nio-8080-exec-9] com.lrpcn.quickdev.aop.LogInterceptor    : 请求开始，请求ID: a1381c2314874024941ba5d1e93af336，请求路径: /api/user/login，ip: 0:0:0:0:0:0:0:1 请求参数: [UserLoginRequest(userAccount=admin, userPassword=123456789)]
+2024-02-11 21:03:57.016  INFO 9792 --- [http-nio-8080-exec-9] com.lrpcn.quickdev.aop.LogInterceptor    : 请求结束，请求ID: a1381c2314874024941ba5d1e93af336，执行时间: 5ms
+2024-02-11 21:03:57.386  INFO 9792 --- [http-nio-8080-exec-10] com.lrpcn.quickdev.aop.LogInterceptor    : 请求开始，请求ID: 00f18e88be9a483b8d1688032dcdf851，请求路径: /api/user/login，ip: 0:0:0:0:0:0:0:1 请求参数: [UserLoginRequest(userAccount=admin, userPassword=123456789)]
+2024-02-11 21:03:57.392  INFO 9792 --- [http-nio-8080-exec-10] com.lrpcn.quickdev.aop.LogInterceptor    : 请求结束，请求ID: 00f18e88be9a483b8d1688032dcdf851，执行时间: 5ms
+2024-02-11 21:03:57.797  INFO 9792 --- [http-nio-8080-exec-1] com.lrpcn.quickdev.aop.LogInterceptor    : 请求开始，请求ID: 799222ff3f304e96bf32c442fde39082，请求路径: /api/user/login，ip: 0:0:0:0:0:0:0:1 请求参数: [UserLoginRequest(userAccount=admin, userPassword=123456789)]
+2024-02-11 21:03:57.802  INFO 9792 --- [http-nio-8080-exec-1] com.lrpcn.quickdev.aop.LogInterceptor    : 请求结束，请求ID: 799222ff3f304e96bf32c442fde39082，执行时间: 5ms
+2024-02-11 21:24:37.953  INFO 9792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-11 21:24:37.959  INFO 9792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-11 21:24:40.801  INFO 2100 --- [main] com.lrpcn.quickdev.QuickDevApplication   : Starting QuickDevApplication using Java 1.8.0_392 on PC202306121830L with PID 2100 (C:\Users\Administrator\Desktop\JavaLearn\lrpcn\quick-dev\target\classes started by Administrator in C:\Users\Administrator\Desktop\JavaLearn\lrpcn\quick-dev)
+2024-02-11 21:24:40.809  INFO 2100 --- [main] com.lrpcn.quickdev.QuickDevApplication   : The following 1 profile is active: "dev"
+2024-02-11 21:24:41.750  INFO 2100 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-02-11 21:24:41.752  INFO 2100 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-02-11 21:24:41.771  INFO 2100 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-02-11 21:24:41.873  WARN 2100 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.lrpcn.quickdev.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2024-02-11 21:24:41.874  WARN 2100 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.lrpcn.quickdev.mapper]' package. Please check your configuration.
+2024-02-11 21:24:42.316  INFO 2100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-02-11 21:24:42.322  INFO 2100 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-11 21:24:42.322  INFO 2100 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2024-02-11 21:24:42.386  INFO 2100 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-11 21:24:42.386  INFO 2100 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1528 ms
+2024-02-11 21:24:42.467  INFO 2100 --- [main] org.redisson.Version                     : Redisson 3.21.3
+2024-02-11 21:24:42.641  INFO 2100 --- [redisson-netty-2-5] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for localhost/127.0.0.1:6379
+2024-02-11 21:24:42.671  INFO 2100 --- [redisson-netty-2-20] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for localhost/127.0.0.1:6379
+2024-02-11 21:24:43.703  INFO 2100 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-02-11 21:24:43.863  INFO 2100 --- [main] com.lrpcn.quickdev.QuickDevApplication   : Started QuickDevApplication in 3.406 seconds (JVM running for 3.769)
+2024-02-11 21:24:55.608  INFO 2100 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-11 21:24:55.608  INFO 2100 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-11 21:24:55.609  INFO 2100 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-11 21:24:55.695  INFO 2100 --- [http-nio-8080-exec-1] com.lrpcn.quickdev.aop.LogInterceptor    : 请求开始，请求ID: 1d4ff36068b54c3fb6f568e8eef74233，请求路径: /api/user/login，ip: 0:0:0:0:0:0:0:1 请求参数: [UserLoginRequest(userAccount=admin, userPassword=123456789)]
+2024-02-11 21:24:55.726  INFO 2100 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-11 21:24:55.925  INFO 2100 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-11 21:24:55.970  INFO 2100 --- [http-nio-8080-exec-1] com.lrpcn.quickdev.aop.LogInterceptor    : 请求结束，请求ID: 1d4ff36068b54c3fb6f568e8eef74233，执行时间: 286ms
